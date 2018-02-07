@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>手机名医在线</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/swiper-3.4.2.min.css">
+    <script src="./css/flexible_css.debug.js"></script>
+    <script src="./css/flexible.debug.js"></script>
+    <script type="text/javascript">
+    function linksBox(){
+    var sHeight = document.body.scrollHeight;
+    var sWidth = document.body.scrollWidth;
+    var viewHeight = document.documentElement.clientHeight;
+
+    var mask = document.createElement("div");
+        mask.id = "mask";
+    mask.style.height = sHeight + "px";
+    mask.style.width = sWidth + "px";
+    document.body.appendChild(mask);
+
+    var allLinks = document.createElement("div");
+        allLinks.id = "all-links-section";
+        allLinks.innerHTML = "<h6 class='all-links-title'>栏目</h6><ul class='all-links-block'><li><a href='#'>精神心理科</a></li><li><a href='#'>小儿内科</a></li><li><a href='#'>乳腺病科</a></li><li><a href='#'>小儿内科</a></li><li><a href='#'>血液病科</a></li><li><a href='#'>性功能障碍科</a></li><li><a href='#'>小儿内科</a></li><li><a href='#'>血液病科</a></li><li><a href='#'>性功能障碍科</a></li><li><a href='#'>小儿内科</a></li><li><a href='#'>血液病科</a></li><li><a href='#'>性功能障碍科</a></li><li><a href='#'>小儿内科</a></li><li><a href='#'>血液病科</a></li><li><a href='#'>性功能障碍科</a></li><li><a href='#'>小儿内科</a></li><li><a href='#'>血液病科</a></li><li><a href='#'>性功能障碍科</a></li><li><a href='#'>小儿内科</a></li><li><a href='#'>血液病科</a></li><li><a href='#'>性功能障碍科</a></li><li><a href='#'>小儿内科</a></li><li><a href='#'>血液病科</a></li><li><a href='#'>性功能障碍科</a></li></ul>";
+    document.body.appendChild(allLinks);
+
+    mask.onclick = function () {
+        document.body.removeChild(mask);
+        document.body.removeChild(allLinks);
+    };
+}
+
+window.onload = function () {
+    var dots = document.getElementById("dots");
+    dots.onclick = function () {
+        linksBox();
+        return false;
+    };
+}
+    </script>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="arrow" title="返回"></a>
+        <h1 class="info-title">图片详情</h1>
+        <a href="#" class="dots" id="dots" title="更多"></a>
+    </header>
+    <div class="content">
+        <div class="img-detail-content">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="imagine-box clearfix">
+                            <img src="./img/imagine-box1.jpg" alt="全球最新6款医疗器械新品" />
+                        </div>
+                        <article class="info-box clearfix">
+                            <article class="info-article fl">
+                                <h3>全球最新6款医疗器械新品</h3>
+                                <span class="page">
+                                    <b>1</b>/2</span>
+                                <p class="info-show" id="info-show">全球多家医疗器械公司，正在致力于改善残疾人的生活状况，通过一些随身携带的医疗器械，帮助参加人恢复各种欠缺的行动能力，比如：SoundBite牙齿助听系
+                                    <p class="info-hide" id="info-hide" style="display:none;">统、Argo重走外骨骼、人机能量交互腿部矫正器等等，这些全新的医疗设备能够帮助患者改善生活质量。</p>
+                                </p>
+                            </article>
+                        </article>
+                        <div class="advertisement clearfix">
+                            <div class="advertisement-info fl">
+                                <div class="ad-pic fl">
+                                    <img src="./img/article-img3.jpg" alt="">
+                                </div>
+                                <div class="ad-subtitle fl">白血病的出现往往会给患者的心理造成很大的...</div>
+                                <div class="ad-logo fl">广告</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="imagine-box clearfix">
+                            <img src="./img/imagine-box2.jpg" alt="女性养生不要走进6大误区" />
+                        </div>
+                        <article class="info-box clearfix">
+                            <article class="info-article fl">
+                                <h3>女性养生不要走进6大误区</h3>
+                                <span class="page">
+                                    <b>2</b>/2</span>
+                                <p class="info-show" id="info-show">谁不想年轻呀，谁不曾年轻过呀，现代女性朋友越来越关注保健养生，只有正确的养生方式才能远离身体疾病。目前，很多女性朋友对保健养生存在一定的误区，
+                                    <p class="info-hide" id="info-hide" style="display:none;">这些误区就可能会让女性出现致命的伤害。</p>
+                                </p>
+                            </article>
+                        </article>
+                        <div class="advertisement clearfix">
+                            <div class="advertisement-info fl">
+                                <div class="ad-pic fl">
+                                    <img src="./img/article-img2.jpg" alt="">
+                                </div>
+                                <div class="ad-subtitle fl">白血病的出现往往会给患者的心理造成很大的...</div>
+                                <div class="ad-logo fl">广告</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <nav>
+            <ul class="clearfix">
+                <li>
+                    <a href="#"><i class="home-icon"></i><br>首页</a>
+                </li>
+                <li>
+                    <a href="#"><i class="console-icon"></i><br>咨询</a>
+                </li>
+                <li>
+                    <a href="#"><i class="mine-icon"></i><br>我的</a>
+                </li>
+                <li>
+                    <a href="#"><i class="share-icon"></i><br>分享</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="./js/jquery-1.12.3.js"></script>
+    <script src="./js/swiper-3.4.2.jquery.min.js"></script>
+    <script>        
+            var mySwiper = new Swiper('.swiper-container', {
+                direction: 'horizontal',
+                loop: true,
+    
+              
+            })
+            
+            $(document).ready(function () {
+    $(".info-show").click(function () {
+        $(".info-hide").show(2000);
+    });
+});
+        </script>
+</body>
+
+</html>
